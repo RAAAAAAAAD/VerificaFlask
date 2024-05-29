@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleziona Città</title>
+</head>
+<body>
+    <form action="/elencoclienti" method="GET">
+        {% for citta, count in tabella.items() %}
+            <p><input type="radio" name="citta" value="{{ citta }}" />{{ citta }} ({{ count }})</p>
+        {% endfor %}
+        <p><input type="submit" value="Info" /></p>
+    </form>
+</body>
+</html>

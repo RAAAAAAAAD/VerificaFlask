@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggiungi Cliente</title>
+</head>
+<body>
+    <form action="/aggiungi_cliente" method="POST">
+        <p>Inserisci i dati del nuovo cliente:</p>
+        <p>ID: <input type="number" name="customer_id" /></p>
+        <p>Nome: <input type="text" name="customer_name" /></p>
+        <p>Contatto: <input type="text" name="contact_name" /></p>
+        <p>Indirizzo: <input type="text" name="address" /></p>
+        <p>Città: <input type="text" name="city" /></p>
+        <p>CAP: <input type="text" name="postal_code" /></p>
+        <p>Nazione: <input type="text" name="country" /></p>
+        <p><input type="submit" value="Aggiungi" /></p>
+    </form>
+    <p>{{ msg }}</p>
+</body>
+</html>
